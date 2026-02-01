@@ -10435,20 +10435,21 @@ document.addEventListener('DOMContentLoaded', function() {
         font-size: 15px;
       }
     }
-  </style>
-<!--Start of Tawk.to Script-->
-<!-- Tawk.to Chat Script with Auto-Hide -->
+  </style><!-- ================= TAWK.TO AI CHAT (CUSTOM BUTTON ONLY) ================= -->
 <script type="text/javascript">
   var Tawk_API = Tawk_API || {};
   var Tawk_LoadStart = new Date();
 
+  // Hide default widget on load
   Tawk_API.onLoad = function () {
     Tawk_API.hideWidget();
   };
 
+  // Auto-hide after chat open/close
   Tawk_API.onChatStarted = function () {
     setTimeout(() => Tawk_API.hideWidget(), 150);
   };
+
   Tawk_API.onChatEnded = function () {
     setTimeout(() => Tawk_API.hideWidget(), 150);
   };
@@ -10457,97 +10458,74 @@ document.addEventListener('DOMContentLoaded', function() {
     var s1 = document.createElement("script");
     var s0 = document.getElementsByTagName("script")[0];
     s1.async = true;
-    s1.src = 'https://embed.tawk.to/683801f90b2a73190d13fa7a/1isdcfem7';
-    s1.charset = 'UTF-8';
-    s1.setAttribute('crossorigin', '*');
+    s1.src = "https://embed.tawk.to/6959f18356031d197dfe1f73/1je3lera4";
+    s1.charset = "UTF-8";
+    s1.setAttribute("crossorigin", "*");
     s0.parentNode.insertBefore(s1, s0);
   })();
 </script>
-<!-- Custom Chat Button (Glitch-Free & Text-Fit) -->
-<!-- Tawk.to Chat Script with Auto-Hide -->
-<script type="text/javascript">
-  var Tawk_API = Tawk_API || {};
-  var Tawk_LoadStart = new Date();
 
-  Tawk_API.onLoad = function () {
-    Tawk_API.hideWidget();
-  };
+<!-- ================= CUSTOM FLOATING CHAT BUTTON ================= -->
+<div style="position:fixed;bottom:20px;right:20px;z-index:9999;">
+  <button
+    aria-label="Chat with Admission Expert"
+    onclick="openTawkChat()"
+    onmouseover="this.style.animation='none';this.style.transform='scale(1.08)'"
+    onmouseout="this.style.animation='zoomBlink 3s ease-in-out infinite'"
+    style="
+      background:transparent;
+      border:none;
+      padding:0;
+      cursor:pointer;
+      animation:zoomBlink 3s ease-in-out infinite;
+    "
+  >
+    <!-- SVG BUTTON -->
+    <svg width="240" height="70" viewBox="0 0 240 70" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="chatGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#1f4fd8"/>
+          <stop offset="100%" stop-color="#4ade80"/>
+        </linearGradient>
+      </defs>
 
-  Tawk_API.onChatStarted = function () {
-    setTimeout(() => Tawk_API.hideWidget(), 150);
-  };
-  Tawk_API.onChatEnded = function () {
-    setTimeout(() => Tawk_API.hideWidget(), 150);
-  };
-
-  (function () {
-    var s1 = document.createElement("script");
-    var s0 = document.getElementsByTagName("script")[0];
-    s1.async = true;
-    s1.src = 'https://embed.tawk.to/683801f90b2a73190d13fa7a/1isdcfem7';
-    s1.charset = 'UTF-8';
-    s1.setAttribute('crossorigin', '*');
-    s0.parentNode.insertBefore(s1, s0);
-  })();
-</script>
-<!-- Custom Chat Button with Zoom + Blink Effect -->
-<div style="position: fixed; bottom: 20px; right: 20px; z-index: 9999;">
-<button aria-label="Chat with Bangalore Admission Hub AI" onclick="openTawkChat()" onmouseout="this.style.animation='zoomBlink 3s ease-in-out infinite';" onmouseover="this.style.animation='none'; this.style.transform='scale(1.08)';" style="
-      background: transparent;
-      border: none;
-      padding: 0;
-      margin: 0;
-      cursor: pointer;
-      outline: none;
-      transform-origin: center;
-      animation: zoomBlink 3s ease-in-out infinite;
-    ">
-<!-- Glitch-Free SVG Button -->
-<svg height="70" viewbox="0 0 240 70" width="240" xmlns="http://www.w3.org/2000/svg">
-<defs>
-<lineargradient id="grad1" x1="0%" x2="100%" y1="0%" y2="100%">
-<stop offset="0%" stop-color="#007bff"></stop>
-<stop offset="100%" stop-color="#4ade80"></stop>
-</lineargradient>
-</defs>
-<rect fill="url(#grad1)" height="60" rx="34" ry="34" width="232" x="4" y="4"></rect>
-<!-- ✅ CENTERED TEXT -->
-<text fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" x="120" y="28">
+      <rect x="4" y="4" rx="34" ry="34" width="232" height="60" fill="url(#chatGrad)"/>
+      <text x="120" y="30" text-anchor="middle" fill="#fff" font-size="14" font-weight="600">
         Chat With
       </text>
-<text fill="white" font-family="Arial, sans-serif" font-size="20" font-weight="bold" letter-spacing="0" text-anchor="middle" x="120" y="52"></text>
-<path d="M180 18 L182 16 L184 18 L182 20 Z" fill="white" opacity="0.9"></path>
-<path d="M190 22 L192 20 L194 22 L192 24 Z" fill="white" opacity="0.9"></path>
-<path d="M200 18 L202 16 L204 18 L202 20 Z" fill="white" opacity="0.9"></path>
-<path d="M210 22 L212 20 L214 22 L212 24 Z" fill="white" opacity="0.9"></path>
-</svg>
-</button>
+      <text x="120" y="52" text-anchor="middle" fill="#fff" font-size="20" font-weight="700">
+        Admission Expert
+      </text>
+    </svg>
+  </button>
 </div>
+
 <style>
-  @keyframes zoomBlink {
-    0%, 100% {
-      transform: scale(1);
-      filter: brightness(1);
-    }
-    50% {
-      transform: scale(1.03);
-      filter: brightness(1.1);
-    }
+@keyframes zoomBlink {
+  0%,100%{
+    transform:scale(1);
+    filter:brightness(1);
   }
+  50%{
+    transform:scale(1.04);
+    filter:brightness(1.15);
+  }
+}
 </style>
+
 <script>
-  function openTawkChat() {
-    if (typeof Tawk_API !== 'undefined' && Tawk_API.toggle) {
-      Tawk_API.toggle();
-      setTimeout(() => {
-        if (typeof Tawk_API.hideWidget === 'function') {
-          Tawk_API.hideWidget();
-        }
-      }, 150);
-    } else {
-      setTimeout(openTawkChat, 300);
-    }
+function openTawkChat() {
+  if (typeof Tawk_API !== "undefined" && Tawk_API.toggle) {
+    Tawk_API.toggle();
+    setTimeout(function () {
+      if (Tawk_API.hideWidget) {
+        Tawk_API.hideWidget();
+      }
+    }, 150);
+  } else {
+    setTimeout(openTawkChat, 300);
   }
+}
 </script>
 <!-- Lead Popup -->
 <div class="lead-popup" id="leadPopup">
