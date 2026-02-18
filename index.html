@@ -10528,21 +10528,16 @@ function openTawkChat() {
 }
 </script>
 <!-- Lead Popup -->
-<form name="popup-leads"
-      method="POST"
-      data-netlify="true"
-      netlify-honeypot="bot-field"
-      onsubmit="handlePopupSubmit(event)">
-
-<input type="hidden" name="form-name" value="popup-leads">
-<input type="hidden" name="bot-field">
-
-<input name="name" placeholder="Your Name" required type="text"/>
-<input name="phone" placeholder="Mobile Number" required type="tel"/>
-<input name="email" placeholder="Email (Optional)" type="email"/>
-<input name="course" placeholder="Course Interested" required type="text"/>
-<textarea name="remarks" placeholder="Remarks (Optional)"></textarea>
-
+<div class="lead-popup" id="leadPopup">
+<div class="lead-box">
+<span class="close-btn" onclick="closeLead()">×</span>
+<h3>Get Free Counselling</h3>
+<form onsubmit="event.preventDefault();closeLead();window.location.href='/'">
+<input placeholder="Your Name" required="" type="text"/>
+<input placeholder="Mobile Number" required="" type="tel"/>
+<input placeholder="Email (Optional)" type="email"/>
+<input placeholder="Course Interested" required="" type="text"/>
+<textarea placeholder="Remarks (Optional)"></textarea>
 <button type="submit">🚀 Book Your Seat</button>
 </form>
 </div>
